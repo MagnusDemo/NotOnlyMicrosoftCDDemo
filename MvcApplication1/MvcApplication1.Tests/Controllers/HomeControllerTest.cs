@@ -10,14 +10,13 @@ namespace MvcApplication1.Tests.Controllers
 		[Test]
 		public void Index()
 		{
-			// Arrange
 			var controller = new HomeController();
 
-			// Act
 			var result = controller.Index() as ViewResult;
 
-			// Assert
 			Assert.AreEqual(null, result.ViewBag.Message);
+
+			//Assert.Fail("Make it #FAIL on purpose!");
 		}
 	}
 }
